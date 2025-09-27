@@ -5,31 +5,37 @@
 
 :root {
   --fg0: #000000;
-  --fg1: #3b3b3b;
-  --fg2: #4d4d4d;
-  --fg3: #636363;
-  --fg4: #707070;
-  --fgSerious: #db1b06;
-  --fgSuccess: #006430;
-  --fgModerate: #a65006;
-  --fgAccent: #002cf2;
+  --fg1: #2c2c2c;
+  --fg2: #404040;
+  --fg3: #555555;
+  --fg4: #666666;
+  --fgSerious: #dc2626;
+  --fgSuccess: #059669;
+  --fgModerate: #d97706;
+  --fgAccent: #ffffff;
+  
+  /* Chat page variables */
+  --primary-color: #0d4aa5;
+  --secondary-color: #F0F4F8;
+  --text-primary: #111418;
+  --text-secondary: #617189;
 
-  --bg1: #f9f9f6;
-  --bg2: #f3f3f1;
-  --bg3: #e2e2df;
-  --bgSerious: #fae6e6;
-  --bgSerious2: #ffcdc7;
-  --bgSuccess: #d1fadf;
-  --bgModerate: #faedd1;
-  --bgAccent: #b3ccff;
-  --bgAccentPrimary: #e2ebfd;
+  --bg1: #ffffff;
+  --bg2: #fafafa;
+  --bg3: #f5f5f5;
+  --bgSerious: #fef2f2;
+  --bgSerious2: #fecaca;
+  --bgSuccess: #f0fdf4;
+  --bgModerate: #fffbeb;
+  --bgAccent: #ffffff;
+  --bgAccentPrimary: #f8fafc;
 
-  --separator1: #dbdbd8;
-  --separator2: #bdbdbb;
-  --separatorSerious: #ffcdc7;
-  --separatorSuccess: #94dcb5;
-  --separatorModerate: #fbd7a0;
-  --separatorAccent: #b3ccff;
+  --separator1: #e5e7eb;
+  --separator2: #d1d5db;
+  --separatorSerious: #fecaca;
+  --separatorSuccess: #bbf7d0;
+  --separatorModerate: #fed7aa;
+  --separatorAccent: #ffffff;
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -38,15 +44,15 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #002cf2;
-  --primary-hover: #0020b9;
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: #f3f3f1;
+  --primary: #ffffff;
+  --primary-hover: #f8f9fa;
+  --primary-foreground: oklch(0.145 0 0);
+  --secondary: oklch(0.98 0 0);
+  --secondary-foreground: oklch(0.145 0 0);
+  --muted: #f8f9fa;
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent: oklch(0.98 0 0);
+  --accent-foreground: oklch(0.145 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);

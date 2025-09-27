@@ -1,20 +1,20 @@
 import type { AppConfig } from './lib/types';
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'LiveKit',
-  pageTitle: 'LiveKit Voice Agent',
-  pageDescription: 'A voice agent built with LiveKit',
+  companyName: 'TheraFlow',
+  pageTitle: 'Theraflow',
+  pageDescription: 'Your are an ai Therapist helps user to find and overcome Negative thoughts and behaviors',
 
   supportsChatInput: true,
-  supportsVideoInput: true,
-  supportsScreenShare: true,
+  supportsVideoInput: false,
+  supportsScreenShare: false,
   isPreConnectBufferEnabled: true,
 
-  logo: '/lk-logo.svg',
-  accent: '#002cf2',
-  logoDark: '/lk-logo-dark.svg',
-  accentDark: '#1fd5f9',
-  startButtonText: 'Start call',
+  logo: '',
+  accent: '#ffffff',
+  logoDark: '',
+  accentDark: '#f8f9fa',
+  startButtonText: 'Talk to Theraflow',
 
   agentName: undefined,
 };

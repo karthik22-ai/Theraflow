@@ -55,8 +55,8 @@ export default function LiveKit() {
             className="w-full"
             capabilities={{
               supportsChatInput: true,
-              supportsVideoInput: true,
-              supportsScreenShare: true,
+              supportsVideoInput: false,
+              supportsScreenShare: false,
             }}
           />
         </div>

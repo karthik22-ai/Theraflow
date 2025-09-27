@@ -1,4 +1,4 @@
-import { Public_Sans } from 'next/font/google';
+import { Public_Sans, Manrope } from 'next/font/google';
 import localFont from 'next/font/local';
 import { headers } from 'next/headers';
 import { APP_CONFIG_DEFAULTS } from '@/app-config';
@@ -9,6 +9,12 @@ import './globals.css';
 const publicSans = Public_Sans({
   variable: '--font-public-sans',
   subsets: ['latin'],
+});
+
+const manrope = Manrope({
+  variable: '--font-manrope',
+  subsets: ['latin'],
+  weight: ['400', '500', '700', '800'],
 });
 
 const commitMono = localFont({
@@ -64,10 +70,11 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         {styles && <style>{styles}</style>}
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <ApplyThemeScript />
       </head>
       <body
-        className={`${publicSans.variable} ${commitMono.variable} overflow-x-hidden antialiased`}
+        className={`${publicSans.variable} ${manrope.variable} ${commitMono.variable} overflow-x-hidden antialiased`}
       >
         {children}
         <div className="group fixed bottom-0 left-1/2 z-50 mb-2 -translate-x-1/2">
