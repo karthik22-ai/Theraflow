@@ -56,7 +56,8 @@ export default function ChatPage() {
     const checkConnection = async () => {
       console.log('Checking backend connection...');
       try {
-        const response = await fetch('http://localhost:5001/health');
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001';
+        const response = await fetch(`${apiUrl}/health`);
         const result = { success: response.ok, message: response.ok ? 'Backend is accessible' : `Health endpoint returned ${response.status}` };
         console.log('Connection test result:', result);
         setIsConnected(result.success);
@@ -88,6 +89,7 @@ export default function ChatPage() {
 
       try {
         // Make streaming request to the chat-stream endpoint
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001';
         const requestBody = {
           message: userMessage.text,
           userId: userId,
@@ -95,12 +97,11 @@ export default function ChatPage() {
         };
         
         console.log('Sending request to backend:', {
-          url: 'http://localhost:5001/chat-stream',
+          url: `${apiUrl}/chat-stream`,
           method: 'POST',
           body: requestBody
         });
-        
-        const response = await fetch('http://localhost:5001/chat-stream', {
+        const response = await fetch(`${apiUrl}/chat-stream`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
