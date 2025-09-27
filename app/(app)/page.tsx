@@ -42,7 +42,7 @@ export default function Dashboard() {
             <p className="text-sm text-gray-500 text-center mt-1">Voice conversation with AI</p>
           </Link>
           
-          <Link href="#" className="flex flex-col items-center justify-center p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 bg-white border border-gray-200">
+          <Link href="/breathing" className="flex flex-col items-center justify-center p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 bg-white border border-gray-200">
             <div className="w-20 h-20 mb-4 flex items-center justify-center rounded-full bg-gray-100 shadow-[0_0_15px_rgba(0,0,0,0.05)]">
               <span className="material-symbols-outlined text-5xl text-gray-700">air</span>
             </div>
@@ -59,7 +59,7 @@ export default function Dashboard() {
           </Link>
           
           <div className="col-span-2">
-            <Link href="#" className="flex items-center p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 bg-white border border-gray-200">
+            <Link href="/journal" className="flex items-center p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 bg-white border border-gray-200">
               <div className="w-20 h-20 mr-6 flex items-center justify-center rounded-full bg-gray-100 shadow-[0_0_15px_rgba(0,0,0,0.05)]">
                 <span className="material-symbols-outlined text-5xl text-gray-700">edit_note</span>
               </div>
